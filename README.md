@@ -18,7 +18,7 @@
 | **注入 Cookie 参数**               | 是否对 Cookie 中的参数进行注入测试                           |
 | **注入 Header 参数**               | 是否对自定义 Header 中的参数进行注入测试                     |
 | **使用完整 POC 字符串**            | 开启：参数值替换为完整 PoC；关闭：仅用提取的 payload 值 (仅针对特定poc，比如完整poc结构为`fragment=__${7*7}__` 的时候，关闭此选项仅会提取`__${7*7}__`放入到参数)     |
-| **追加 POC 参数到请求**            | 在保留原参数的基础上，追加 PoC 的 key=value 结构 (与mode 1功能略有区别，仅针对仅针对特定poc，比如完整poc结构为`fragment=__${7*7}__` 、原始请求假设为`key=value`的时候，开启此选项，请求后的参数为`key=value&fragment=__${7*7}__)`             |
+| **追加 POC 参数到请求**            | 在保留原参数的基础上，追加 PoC 的 key=value 结构 (与mode 1功能略有区别，仅针对仅针对特定poc，比如完整poc结构为`fragment=__${7*7}__` 、原始请求假设为`key=value`的时候，开启此选项，请求后的参数为`key=value&fragment=__${7*7}__`             |
 | **保留原始值再拼接 Payload**       | 开启：`username=admin` → `username=admin' or 1='1`；关闭：`username=admin` → `username=' or 1='1` ,此功能针对依赖原有参数场景|
 | **URL 编码替换值**                 | 是否对替换的 payload 值进行 URL 编码 (仅对特殊符号、空格进行URL编码)                        |
 
