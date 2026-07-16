@@ -147,7 +147,7 @@ class BurpExtender(IBurpExtender, ITab, IHttpListener, IMessageEditorController,
             print("\t\t V2.1: 双模式扫描(替换请求体/替换参数值), 深度嵌套参数解析")
             print("\t\t       GET->POST请求头修复, Cookie/Header注入支持")
             print("\t\t       Content-Type切换, 追加POC参数模式")
-            print("\t\t V1.0: 基于 xiaSQL_Plus 架构，支持fuzz_scannerFUZZ检测")
+            print("\t\t V1.0: 基于 xiaSQL_Plus 架构")
         except:
             print("FUZZ Scanner V2.1 - FUZZ漏洞检测插件")
 
